@@ -1,0 +1,34 @@
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap:1.5rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-bottom: 4rem;
+}
+
+.review .box-container .box{
+    border:var(--border);
+    text-align: center;
+    padding:3rem 2rem;
+    max-width: 80rem;
+    max-height: 30rem;
+}
+
+.review .box-container .box p{
+    font-size: 1rem;
+    line-height: 1.8;
+    color:var(--black);
+}
+
+.review .box-container .box h3{
+    padding:1rem 0;
+    font-size: 1rem;
+    color:var(--black);
+    text-transform: capitalize;
+}
+
+.review .box-container .box .stars i{
+    font-size: 1.5rem;
+    color:var(--primary-color);
+}

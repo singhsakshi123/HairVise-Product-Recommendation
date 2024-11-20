@@ -1,0 +1,114 @@
+:root {
+    --main-color: #d7c7ae;
+    --primary-color: #8a6d46;
+    --hover: #5a4d3e;
+    --black: #000;
+    --white: #fff;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+* {
+    font-family: 'Playfair Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html::-webkit-scrollbar {
+    width: .6rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+}
+
+/* header */
+
+/* End of header */
+
+  .containers {
+    width: 640px;
+    margin: auto;
+    margin-top: 150px;
+    background: var(--primary-color);
+    color: var(--black);
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    padding: 40px 50px;
+    text-align: center;
+    padding: 40px 50px;
+}
+
+  .question {
+    font-size: 27px;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 18px;
+    
+  }
+
+  .option {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    width: 250px;
+    
+  }
+
+  .option:hover {
+    background-color: var(--main-color);
+  }
+
+  .selected {
+    background-color: var(--main-color);
+  }
+
+  #nextBtn {
+    margin: auto;
+    width: 250px;
+    height: 65px;
+    background: #0b0b0b;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  #questionIndex {
+    margin: 20px;
+    font-size: 18px;
+
+  }
+
+  .recommendation-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 640px;
+  background: var(--primary-color);
+  color: var(--black);
+  border: 2px solid var(--black);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}

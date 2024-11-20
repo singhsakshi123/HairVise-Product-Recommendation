@@ -1,0 +1,84 @@
+.footer {
+    background: var(--main-color);
+    text-align: center;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
+}
+
+.footer .box-container .box h3 {
+    margin-top: 3rem;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    padding: 1rem 0;
+    font-weight: bolder;
+}
+
+.footer .box-container .box p {
+    font-size: 15px;
+    line-height: 2;
+    color: var(--black);
+    /* padding: 1rem 0; */
+}
+
+.footer .box-container .box .share {
+    margin-top: 1rem;
+}
+
+.footer .box-container .box .share a {
+    text-align: center;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    margin-right: .3rem;
+}
+
+.footer .box-container .box .share a:hover {
+    background-color: var(--black);
+}
+
+.footer .box-container .box .link {
+    font-size: 20px;
+    line-height: 2;
+    color: var(--primary-color);
+    padding: .5rem 0;
+    display: block; 
+}
+
+.footer .box-container .box .link:hover {
+    color: var(--black);
+    /* text-decoration: underline; */
+}
+
+.footer .box-container .box .email {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 20px;
+    border: 0.1rem solid var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.footer .credit {
+    text-align: center;
+    margin-top: 0.8rem;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #444;
+    border-top: 0.1rem solid var(--primary-color);
+}
+
+.footer .credit span {
+    color: var(--primary-color);
+}

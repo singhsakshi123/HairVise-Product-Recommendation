@@ -1,0 +1,316 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+     "responses": [ "Hi there, how can I help?"],
+     "context": [""]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+     "context": [""]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure"],
+     "context": [""]
+    },
+    {"tag": "noanswer",
+     "patterns": [],
+     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+     "context": [""]
+    },
+    {"tag": "dry_hair, hair_care_tips",
+     "patterns": [" What are some tips for dry hair?",
+     "How can I make my dry hair more manageable?",
+     "What are the best products for dry hair?"],
+     "responses": ["Here are some tips for dry hair:\n    * Wash your hair less often.\n    * Use a moisturizing shampoo and conditioner.\n    * Use a deep conditioning hair mask once a week.\n    * Avoid heat styling tools as much as possible.\n    * Use a leave-in conditioner or hair oil to help seal in moisture.",
+     "Here are some of the best products for dry hair:\n    * A moisturizing shampoo and conditioner\n    * A deep conditioning hair mask\n    * A leave-in conditioner or hair oil\n    * A heat protectant spray"],
+     "context": ["The user has expressed interest in tips for dry hair."]
+    },
+    {"tag": "hair_loss, hair_care_tips",
+     "patterns": ["What are some tips for hair loss?",
+     "How can I prevent hair loss?",
+     "What are the best products for hair loss?" ],
+     "responses": ["Here are some tips for hair loss:\n    * Eat a healthy diet.\n    * Reduce stress.\n    * Get enough sleep.\n    * Avoid heat styling tools as much as possible.\n    * Use a gentle shampoo and conditioner.",
+     "Here are some of the best products for hair loss:\n    * A shampoo and conditioner specifically designed for hair loss\n    * A hair growth serum\n    * A biotin supplement"],
+     "context": ["The user has expressed interest in tips for hair loss."]
+    },
+    {"tag": "hair_damage, hair_care_tips",
+     "patterns": ["What are some tips for repairing damaged hair?",
+     "How can I prevent hair damage?",
+     "What are the best products for damaged hair?" ],
+     "responses": ["Here are some tips for repairing damaged hair:\n    * Get regular trims.\n    * Use a deep conditioning hair mask once a week.\n    * Avoid heat styling tools as much as possible.\n    * Use a leave-in conditioner or hair oil to help seal in moisture.",
+     "Here are some of the best products for damaged hair:\n    * A shampoo and conditioner specifically designed for damaged hair\n    * A deep conditioning hair mask\n    * A leave-in conditioner or hair oil\n    * A heat protectant spray"],
+     "context": ["The user has expressed interest in tips for repairing damaged hair."]
+    },
+    {"tag": "home_remedies, hair_care_tips",
+     "patterns": ["share few home remedies for hair care",
+     "What are some home remedies for hair care?",
+     "Can you suggest some natural remedies for hair care?"],
+     "responses":["Sure, here are some effective home remedies for hair care:\n1. Coconut Oil Massage: Massage warm coconut oil into your scalp and hair, leave it on for at least 30 minutes or overnight, then wash it out with shampoo.\n2. Egg Mask: Beat one or two eggs and apply the mixture to your hair and scalp. Leave it on for about 20 minutes, then rinse with cool water and shampoo.\n3. Yogurt and Honey Mask: Mix plain yogurt and honey in equal parts and apply it to damp hair. Leave it on for 20-30 minutes, then rinse thoroughly with lukewarm water.",
+     "Certainly! Here are a few natural remedies for hair care:\n1. Avocado Hair Mask: Mash a ripe avocado and mix it with a tablespoon of olive oil or coconut oil. Apply the mixture to your hair, focusing on the ends, and leave it on for 30-60 minutes before rinsing with shampoo.\n2. Aloe Vera Gel: Apply fresh aloe vera gel directly to your scalp and hair and leave it on for 30 minutes to an hour before rinsing with water.\n3. Green Tea Rinse: Brew green tea and let it cool to room temperature. Use it as a final rinse after shampooing to strengthen the hair and promote healthy hair growth.",
+     "Of course! Here are some home remedies you can try for hair care:\n1. Rosemary Oil: Massage rosemary oil into your scalp to stimulate hair growth and improve scalp health.\n2. Onion Juice Treatment: Apply onion juice to your scalp and leave it on for 30-60 minutes before rinsing. Onion juice contains sulfur, which can promote hair growth.\n3. Apple Cider Vinegar Rinse: Mix equal parts of apple cider vinegar and water and use it as a final rinse after shampooing to remove buildup and add shine to your hair."],
+     "context":["The user has expressed interest in home remedies"]
+    },
+    {"tag": "rosemary_oil_details",
+    "patterns": [
+        "details about rosemary oil",
+        "What are the benefits of rosemary oil for hair?",
+        "Can you provide information about rosemary oil?"
+    ],
+    "responses": [
+        "Rosemary oil is an essential oil extracted from the leaves of the rosemary plant (Rosmarinus officinalis). It is known for its ability to stimulate hair growth by improving circulation to the scalp. It can help prevent hair loss, strengthen hair follicles, and promote thicker, healthier hair. Additionally, rosemary oil has antimicrobial properties that may help alleviate dandruff and other scalp conditions."
+    ],
+    "context": ["The user has expressed interest in rosemary oil"]
+    },
+    {
+        "tag": "rosemary_shampoo_details",
+        "patterns": [
+            "details about rosemary shampoo",
+            "What are the benefits of rosemary shampoo for hair?",
+            "Can you provide information about rosemary shampoo?"
+        ],
+        "responses": [
+            "Rosemary shampoo is a hair care product infused with rosemary extract or rosemary oil. Similar to rosemary oil, rosemary shampoo can help stimulate hair growth, strengthen hair, and improve scalp health. It may also provide a refreshing and invigorating experience due to its natural fragrance."
+        ],
+        "context": ["The user has expressed interest in rosemary shampoo"]
+    },
+    {
+        "tag": "biotin_gummies_details",
+        "patterns": [
+            "details about biotin gummies",
+            "What are the benefits of biotin gummies for hair?",
+            "Can you provide information about biotin gummies?"
+        ],
+        "responses": [
+            "Biotin gummies are dietary supplements containing biotin, a B-vitamin essential for hair, skin, and nail health. Biotin is often touted for its role in promoting healthy hair growth. It can strengthen hair follicles, reduce hair shedding, and improve the overall condition of the hair."
+        ],
+        "context": ["The user has expressed interest in biotin gummies"]
+    },
+    {
+        "tag": "hair_growth_serum_details",
+        "patterns": [
+            "details about hair growth serum",
+            "What are the benefits of hair growth serum for hair?",
+            "Can you provide information about hair growth serum?"
+        ],
+        "responses": [
+            "Hair growth serum is a topical product designed to stimulate hair follicles and promote hair growth. Hair growth serums typically contain ingredients such as minoxidil, peptides, or botanical extracts that can nourish the scalp, improve blood circulation, and encourage the growth of new hair follicles. They are often used to address hair thinning or balding."
+        ],
+        "context": ["The user has expressed interest in hair growth serum"]
+    },
+    {
+        "tag": "tea_tree_oil_shampoo_details",
+        "patterns": [
+            "details about tea tree oil shampoo",
+            "What are the benefits of tea tree oil shampoo for hair?",
+            "Can you provide information about tea tree oil shampoo?"
+        ],
+        "responses": [
+            "Tea tree oil is an essential oil derived from the leaves of the tea tree (Melaleuca alternifolia). Tea tree oil has antifungal and antibacterial properties that can help treat dandruff, scalp acne, and other scalp conditions. It also has a cooling sensation and can help unclog hair follicles, promoting healthy hair growth."
+        ],
+        "context": ["The user has expressed interest in tea tree oil shampoo"]
+    },
+    {
+        "tag": "ketoconazole_shampoo_details",
+        "patterns": [
+            "details about ketoconazole shampoo",
+            "What are the benefits of ketoconazole shampoo for hair?",
+            "Can you provide information about ketoconazole shampoo?"
+        ],
+        "responses": [
+            "Ketoconazole shampoo is a medicated shampoo containing ketoconazole, an antifungal agent. It is commonly used to treat dandruff and seborrheic dermatitis, which can contribute to hair loss if left untreated. By addressing the underlying fungal infection, ketoconazole shampoo can help improve scalp health and promote healthier hair growth."
+        ],
+        "context": ["The user has expressed interest in Ketoconazole shampoo"]
+    },
+    {
+        "tag": "pure_black_sesame_oil_details",
+        "patterns": [
+            "details about pure black sesame oil",
+            "What are the benefits of pure black sesame oil for hair?",
+            "Can you provide information about pure black sesame oil?"
+        ],
+        "responses": [
+            "Pure black sesame oil is oil extracted from black sesame seeds. It is rich in nutrients like vitamin E, minerals, and antioxidants, which can nourish the scalp and promote hair growth. Black sesame oil helps to strengthen hair follicles, prevent premature graying, and improve overall hair health."
+        ],
+        "context": ["The user has expressed interest in pure black sesame oil"]
+    },
+    {
+        "tag": "argan_oil_details",
+        "patterns": [
+            "details about argan oil",
+            "What are the benefits of argan oil for hair?",
+            "Can you provide information about argan oil?"
+        ],
+        "responses": [
+            "Argan oil is a plant oil derived from the kernels of the argan tree native to Morocco. It is rich in fatty acids and vitamins A, C, and E, which moisturize the scalp, improve hair elasticity, and promote healthy hair growth. Argan oil can help repair damaged hair, reduce frizz, and add shine and softness to the hair."
+        ],
+        "context": ["The user has expressed interest in argan oil"]
+    },
+    {
+        "tag": "nizoral_shampoo_details",
+        "patterns": [
+            "details about nizoral A-D anti dandruff shampoo",
+            "What are the benefits of nizoral A-D anti dandruff shampoo for hair?",
+            "Can you provide information about nizoral A-D anti dandruff shampoo?"
+        ],
+        "responses": [
+            "Nizoral A-D Anti Dandruff Shampoo is designed to effectively treat flaky dandruff and provide relief from itching and flaking. It contains coal tar extract, which helps reduce flaking, itching, and redness associated with dandruff and scalp psoriasis. Nizoral shampoo provides long-lasting relief from dandruff symptoms, helping to keep the scalp healthy and comfortable."
+        ],
+        "context": ["The user has expressed interest in Nizoral A-D Anti Dandruff Shampoo"]
+    },
+    {
+        "tag": "t_gel_therapeutic_shampoo_details",
+        "patterns": [
+            "details about T/Gel Therapeutic Shampoo",
+            "What are the benefits of T/Gel Therapeutic Shampoo for hair?",
+            "Can you provide information about T/Gel Therapeutic Shampoo?"
+        ],
+        "responses": [
+            "T/Gel Therapeutic Shampoo is designed to effectively treat flaky dandruff and provide relief from itching and flaking. It contains coal tar extract, which helps reduce flaking, itching, and redness associated with dandruff and scalp psoriasis. T/Gel shampoo provides long-lasting relief from dandruff symptoms, helping to keep the scalp healthy and comfortable."
+        ],
+        "context": ["The user has expressed interest in T/Gel Therapeutic Shampoo"]
+    },
+    {
+        "tag": "pro_v_color_shampoo_details",
+        "patterns": [
+            "details about Pro-V Color Shampoo",
+            "What are the benefits of Pro-V Color Shampoo for hair?",
+            "Can you provide information about Pro-V Color Shampoo?"
+        ],
+        "responses": [
+            "Pro-V Color Shampoo is specifically formulated to protect and enhance the vibrancy of color-treated or henna-applied hair. It helps lock in color and prevent fading, ensuring that hair color remains vibrant and true for longer. Pro-V Color Shampoo provides gentle yet effective cleansing, removing impurities and excess oil without stripping away hair color. It is infused with nourishing ingredients that help moisturize and strengthen color-treated hair, leaving it soft, shiny, and manageable."
+        ],
+        "context": ["The user has expressed interest in Pro-V color shampoo"]
+    },
+    {
+        "tag": "keratin_smooth_deep_mask_details",
+        "patterns": [
+            "details about Keratin Smooth Deep Mask",
+            "What are the benefits of Keratin Smooth Deep Mask for hair?",
+            "Can you provide information about Keratin Smooth Deep Mask?"
+        ],
+        "responses": [
+            "Keratin Smooth Deep Mask is designed to deeply nourish and repair hair, making it ideal for maintaining keratin-treated hair. It contains keratin proteins that penetrate deep into the hair shaft, helping to repair damage and restore strength and elasticity. The mask provides intense hydration to dry and damaged hair, leaving it silky smooth and frizz-free. It helps replenish lost keratin and nutrients, leaving hair feeling stronger, smoother, and more manageable."
+        ],
+        "context": ["The user has expressed interest in Keratin Smooth Deep Mask"]
+    },
+    {
+        "tag": "hair_volume_tips",
+        "patterns": [
+            "How can i add volume to my hair",
+            "What are some tips for adding volume to hair?",
+            "Any suggestions for adding volume to hair?"
+        ],
+        "responses": [
+            "Using volumizing products such as mousse or root-lifting spray can help add volume to your hair. Blow drying your hair upside down or using a round brush while blow drying can also create lift and volume at the roots."
+        ],
+        "context": ["The user has expressed interest in hair volume tips"]
+    },
+    {
+        "tag": "heat_damage_prevention_tips",
+        "patterns": [
+            "How can I protect my hair from heat damage",
+            "What are some tips for preventing heat damage to hair?",
+            "Any suggestions for protecting hair from heat damage?"
+        ],
+        "responses": [
+            "Use a heat protectant spray or serum before using heat styling tools such as blow dryers, flat irons, or curling irons. Additionally, try to limit the use of heat styling tools and use them on a lower heat setting when possible."
+        ],
+        "context": ["The user has expressed interest in heat prevention tips"]
+    },
+    {
+        "tag": "frizz_reduction_tips",
+        "patterns": [
+            "How can I reduce frizz in my hair",
+            "What are some tips for reducing frizz in hair?",
+            "Any suggestions for controlling frizz in hair?"
+        ],
+        "responses": [
+            "Using a moisturizing shampoo and conditioner, applying a leave-in conditioner or anti-frizz serum, and avoiding heat styling can help reduce frizz. You can also try using a microfiber towel or cotton t-shirt to dry your hair instead of a regular towel, which can cause friction and frizz."
+        ],
+        "context": ["The user has expressed interest in frizz reduction tips"]
+    },
+    {
+        "tag": "split_ends_prevention_tips",
+        "patterns": [
+            "How can I prevent split ends",
+            "What are some tips for preventing split ends?",
+            "Any suggestions for avoiding split ends?"
+        ],
+        "responses": [
+            "Regular trims every 6-8 weeks can help prevent split ends. Additionally, using a leave-in conditioner or hair serum on the ends of your hair can help moisturize and protect them from damage."
+        ],
+        "context": ["The user has expressed interest in splitends prevention tips"]
+    },
+    {
+        "tag": "mumbai_dermatologist",
+        "patterns": ["suggest dermatologist in mumbai"],
+        "responses": [
+        "name: Dr. Debraj Shome, clinic: The Esthetic Clinics, 1st Floor, Kohli Villa, Next to Shopper's Stop, S V Road, Andheri West, Mumbai - 400058, contact: +91-7028065165",
+        "name: Dr. Rinky Kapoor, clinic: The Esthetic Clinics, 1st Floor, Kohli Villa, Next to Shopper's Stop, S V Road, Andheri West, Mumbai - 400058, contact: +91-8875643219",
+        "name: Dr. Priya J Talageri, clinic: Dr. Talageri's Clinic, Linking Road, Bandra West, Mumbai - 400050, contact: +91-9821061039",
+        "name: Dr. Dhananjay Chavan, clinic: Rejoice Aesthetic Experts, Ground floor, Laxmi Palace, near Haveli Hotel, Gandhi Chowk, Mulund West, Mumbai - 400080, contact: +91-7710019973",
+        "name: Dr. Ruchi Amin, clinic: Derma Miracle Skin & Hair Transplant Clinic, M.G. Road, Ghatkopar East, Mumbai - 400077, contact: +91-8451094444"
+    ],
+        "context":["The user has expressed interest in mumbai dermatologist"]
+    },
+    {
+        "tag": "delhi_dermatologist",
+        "patterns": ["suggest dermatologist in delhi"],
+        "responses": [
+            "name: Dr. Simal Soin, clinic: Aayna Clinic, Ambawatta One, H 5/5, Ground Floor, Kalka Das Marg, Mehrauli, New Delhi - 110030, contact: +91-7042297304",
+            "name: Dr. Kavish Chouhan, clinic: DermaClinix - The Complete Skin & Hair Solution Center, D-9, Ground Floor, Green Park Main, New Delhi - 110016, contact: +91-8588827963",
+            "name: Dr. Pankaj Chaturvedi, clinic: DHI India - Delhi, S-27, Near Gurudwara, Greater Kailash 1, New Delhi - 110048, contact: +91-8888900900",
+            "name: Dr. Deepali Bhardwaj, clinic: Skin & Hair Clinic, D-306, Defence Colony, New Delhi - 110024, contact: +91-9810975706",
+            "name: Dr. Vivek Mehta, clinic: Pulastya Skin Clinic, A1/304, Safdarjung Enclave, New Delhi - 110029, contact: +91-9716022666"
+        ],
+        "context":["The user has expressed interest in delhi dermatologist"]
+    },
+    {
+        "tag": "kolkata_dermatologist",
+        "patterns": ["suggest dermatologist in kolkata"],
+        "responses": [
+            "name: Dr. Jayanta Bain, clinic: Bain Clinic, 1/4, Sarat Bose Road, Near Minto Park, Kolkata - 700020, contact: +91-9831518327",
+            "name: Dr. Anup K. Das, clinic: Dr. Das's Clinic, 95, Harish Mukherjee Road, Bhowanipore, Kolkata - 700025, contact: +91-98300 95114",
+            "name: Dr. Satyabrata Ganguly, clinic: Hair Transplant Clinic, 39A, Park Street, Kolkata - 700016, contact: +91-9831043350",
+            "name: Dr. Souvik Adhikari, clinic: The Hair Clinic, 174, Sarat Bose Road, Kolkata - 700029, contact: +91-9831277977",
+            "name: Dr. Prasanta Basak, clinic: Kolkata Hair & Skin Clinic, 163/1A, Prince Anwar Shah Road, Opp. South City Mall, Lake Gardens, Kolkata - 700045, contact: +91-9830120005"
+        ],
+        "context":["The user has expressed interest in kolkata dermatologist"]
+    },
+    {
+        "tag": "hyderabad_dermatologist",
+        "patterns": ["suggest dermatologist in hyderabad"],
+        "responses": [
+            "name: Dr. Venkata Ramana Yamani, clinic: HairSure Hair Transplant Center, 3rd Floor, Above SBH Bank, Opp KFC, Road No:1, Banjara Hills, Hyderabad - 500034, contact: +91-9030221919",
+            "name: Dr. Kiran Kumar A, clinic: Celestee Skin, Laser & Hair Clinic, Plot No. 303, Near KFC & Above Khazana Jewellery, 100 Feet Road, Ayyappa Society, Madhapur, Hyderabad - 500081, contact: +91-9908104374",
+            "name: Dr. A. Sridevi, clinic: Oliva Skin & Hair Clinic, 1st Floor, Above Karachi Bakery, Beside Astoria Hotel, RTC Cross Roads, Hyderabad - 500020, contact: +91-7207906741",
+            "name: Dr. Shruti Sharma, clinic: HairSure Hair Transplant Center, 3rd Floor, Above SBH Bank, Opp KFC, Road No:1, Banjara Hills, Hyderabad - 500034, contact: +91-9030221919",
+            "name: Dr. Srinivas Kandula, clinic: Dr. Srinivas Kandula's Clinic, 2nd Floor, KSR Towers, Beside Indian Oil Petrol Pump, Kukatpally, Hyderabad - 500072, contact: +91-9849994435"
+        ],
+        "context":["The user has expressed interest in hyderabad dermatologist"]
+    },
+    {
+        "tag": "chennai_dermatologist",
+        "patterns": ["suggest dermatologist in chennai"],
+        "responses": [
+            "name: Dr. Arihant Surana, clinic: The Hairsmith Clinic, 55, TTK Road, Alwarpet, Chennai - 600018, contact: +91-9840051917",
+            "name: Dr. Gokulakannan, clinic: Vibes Healthcare Ltd, No.52, Ground Floor, Brindavan Street, West Mambalam, Chennai - 600033, contact: +91-8870120670",
+            "name: Dr. Jayanthy Ravindran, clinic: Skin & Hair Clinic, 44/95, First Floor, Above ICICI Bank, Ranga Road, Mylapore, Chennai - 600004, contact: +91-9840017701",
+            "name: Dr. Shahul Hameed, clinic: Dr. Shahul's Clinic, No. 100, Nungambakkam High Road, Nungambakkam, Chennai - 600034, contact: +91-9841023289",
+            "name: Dr. A. Murali Moorthy, clinic: DermaClinix - The Complete Skin & Hair Solution Center, 17/7, Shanthi Nagar, Opposite to HDFC Bank, Adyar, Chennai - 600020, contact: +91-8588827963"
+        ],
+        "context":["The user has expressed interest in chennai dermatologist"]
+    },
+    {
+        "tag": "patna_dermatologist",
+        "patterns": ["suggest dermatologist in patna"],
+        "responses": [
+            "name: Dr. Shweta Singh, clinic: Skin & Hair Clinic, 10/75, Kankarbagh Road, Patna - 800020, contact: +91-9334110569",
+            "name: Dr. Alok Ranjan, clinic: Aesthetic Beauty Clinic, Indrapuri Road, Khajpura, Patna - 800014, contact: +91-9431097811"
+        ],
+        "context":["The user has expressed interest in patna dermatologist"]
+    }
+]
+}
